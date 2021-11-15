@@ -1,0 +1,31 @@
+{
+  "name": "ab_boilerplate",
+  "version": "1.0.0",
+  "description": "Project description",
+  "main": "index.js",
+  "private": "true",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config prod.config.js",
+    "pack": "node packaging/packStats.js && node packaging/license.js && node packaging/splitter.js",
+    "dev": "webpack --config dev.config.js",
+    "build_pack": "yarn run clean && yarn run build && yarn run pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pandelune/ab-boilerplate.git"
+  },
+  "author": "Pandelune",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pandelune/ab-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Pandelune/ab-boilerplate"
+}
