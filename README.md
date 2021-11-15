@@ -1,9 +1,11 @@
 # Artblocks Project Boilerplate
 
-This JavaScript project template is meant to be used a boilerplate for an [Artblocks](https://www.artblocks.io/) artistic project, **when using p5js**.
-It focuses on code organisation and arblocks specific packaging.
+This JavaScript project template is meant to be used a boilerplate for an [ArtBlocks](https://www.artblocks.io/) artistic project, **when using p5js**.
+It focuses on code organisation and ArtBlocks specific packaging.
 
-It is developed by Pandelune, the author of "Orthogones" and "Murano Fantasy" on Artblocks.
+It is originally developed by Pandelune, the author of "Orthogones" and "Murano Fantasy" on Artblocks.
+
+*Note: This tool is not affiliated with Art Blocks*
 
 Also make sure to read [Artblocks official doc](https://github.com/ArtBlocks/artblocks-docs).
 
