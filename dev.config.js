@@ -2,7 +2,6 @@ const path = require('path');
 
 module.exports = {
   mode: 'development',
-  watch: true,
   entry: {
     test: './src/test.js',
     mint: './src/mint.js',
@@ -12,5 +11,11 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: __dirname + '/dist',
+    publicPath: '/dist/',
+  },
+  devServer: {
+    static: {
+      directory: __dirname,
+    },
   },
 }
