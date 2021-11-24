@@ -25,8 +25,9 @@ In `package.json`, you should fill in the following properties. It is just a goo
 
 You may update `projectNum` in `constants.js`: it is the ID of your project on AB. It is only used to generate random numbers, so if you don't have it yet, do not worry.
 
-Run `yarn run dev` when developping, and open `html/test.html` file.
-In this mode, each time you change a js file in `src`, webpack will automatically rebuild the project, and it will be available for testing at once.
+Run `yarn run dev` when developping, and open `html/test.html` file, **using `http://localhost:8080/html/test.html`**.
+In this mode, each time you change a js file in `src`, webpack will automatically rebuild the project, and the page will automatically update.
+
 
 ### How to write code
 
