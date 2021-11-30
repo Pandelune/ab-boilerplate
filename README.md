@@ -25,7 +25,7 @@ In `package.json`, you should fill in the following properties. It is just a goo
 
 You may update `projectNum` in `constants.js`: it is the ID of your project on AB. It is only used to generate random numbers, so if you don't have it yet, do not worry.
 
-Run `yarn run dev` when developping, and open `html/test.html` file, **using `http://localhost:8080/html/test.html`**.
+Run `yarn run dev` when developing, and open `html/test.html` file, **using `http://localhost:8080/html/test.html`**.
 In this mode, each time you change a js file in `src`, webpack will automatically rebuild the project, and the page will automatically update.
 
 
@@ -49,7 +49,7 @@ You have several html testing files in `html` folder:
 - `test.html` uses `test.js`. **This is the main page that you should use when developing**.
 - `stats.html` uses `stats-tester.js`. You should use this page when developing and testing the stats.
 - `mint.html` uses `mint.js`. You should use it to test that the minting script works well.
-- `mint_rebuilt.html` uses `mint_rebuilt.js`. You should use it to test that the split when well - you must have exactly the same result than with `mint.html`.
+- `mint_rebuilt.html` uses `mint_rebuilt.js`. You should use it to test that the split works well - you must have exactly the same result as with `mint.html`.
 
 
 ### Statistics
@@ -59,7 +59,7 @@ Stats on AB are an important feature, but not always easy to package.
 Use `html/stats.html` to generate stats on a specific hash.
 
 After running `yarn run pack`, you have a `dist/statsWrapped.js` file. You can:
-- run it: 
+- run it:
   - temporarily uncomment the `console.log` in `packaging/statsTemplate.js`
   - pack, and run `node dist/statsWrapped.js` in the command line
 - put it in AB artist interface: just copy paste everything from `dist/statsWrapped.js`
