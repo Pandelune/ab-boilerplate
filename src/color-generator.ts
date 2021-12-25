@@ -1,15 +1,4 @@
-let p;
-let R;
-
-function setP5js(_p5js: p5) {
-  p = _p5js;
-}
-
-function setRandom(_R) {
-  R = _R;
-};
-
-function getColor() {
+function getColor(R) {
 
   const colors = [
     'forestgreen',
@@ -37,4 +26,4 @@ function getColor() {
 
 }
 
-export default { setRandom, setP5js, getColor };
+export default { getColor };

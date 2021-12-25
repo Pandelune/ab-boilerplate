@@ -1,13 +1,6 @@
 import MyArtDrawer from './my-art-drawer';
 import { ArtData } from './my-art-generator';
 
-let p;
-
-function setP5js(_p5js: p5) {
-  p = _p5js;
-  MyArtDrawer.setP5js(p);
-}
-
 function getStats(myArtData: ArtData) {
   // just filter interesting data
   // transform booleans into strings
@@ -21,8 +14,8 @@ function getStats(myArtData: ArtData) {
 }
 
 
-function drawMyArt(myArtData: ArtData, centerX: number, centerY: number, width: number) {
-  MyArtDrawer.drawMyArt(myArtData, centerX, centerY, width);
+function drawMyArt(p, myArtData: ArtData, centerX: number, centerY: number, width: number) {
+  MyArtDrawer.drawMyArt(p, myArtData, centerX, centerY, width);
 }
 
-export default { setP5js, drawMyArt, getStats };
+export default { drawMyArt, getStats };

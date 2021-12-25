@@ -1,29 +1,16 @@
 import ColorGenerator from './color-generator';
 import Constants from './constants';
 
-let p: p5;
-let R;
-
-function setP5js(_p5js: p5) {
-  p = _p5js;
-  ColorGenerator.setP5js(p);
-}
-
-function setRandom(_R) {
-  R = _R;
-  ColorGenerator.setRandom(R);
-}
-
 export type ArtData = {
   color: string;
   circleWidth: number;
   isNice: boolean;
 };
 
-function genMyArt() {
+function genMyArt(R) {
 
   const myArtData: ArtData = {
-    color: ColorGenerator.getColor(),
+    color: ColorGenerator.getColor(R),
     circleWidth: R.random_int(10, Constants.stdWidth * 0.9),
     isNice: R.random_dec() > 0.9,
   };
@@ -33,4 +20,4 @@ function genMyArt() {
 
 }
 
-export default { setP5js, setRandom, genMyArt };
+export default { genMyArt };

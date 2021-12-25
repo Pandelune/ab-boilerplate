@@ -11,6 +11,13 @@
 
 -->
 
+## [1.2.O] 2021-12-25
+
+### Fixed
+
+* no more global p5 variables
+
+
 ## [1.1.0] 2021-12-08
 
 ### Added
